@@ -1,3 +1,25 @@
+/* Colours */
+/* #ffffff white, 
+#ebebed light grey, 
+#95b0b8 light button, 
+#113340 dark button, 
+#000000 black */
+
 body {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+/* Home Page */
+
+.hero-header {
+  background-image: url(/images/header.jpg);
 }
