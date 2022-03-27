@@ -46,6 +46,7 @@ img {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 ul {
@@ -95,7 +96,7 @@ nav {
   display: none;
   position: fixed;
   top: 60px;
-  background: #95b0b8;
+  background: #ffffff;
   z-index: 100;
   left: 0px;
 }
@@ -196,7 +197,7 @@ nav li {
 
 .newsletter {
   background-color: #ebebed;
-  max-width: 1000px;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   margin: 50px auto;
@@ -247,6 +248,35 @@ nav li {
 
 /* Media */
 @media (min-width: 750px) {
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  header label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px;
+  }
+
+  header :nth-child(3) {
+    order: 2;
+  }
+  header :nth-child(4) {
+    order: 1;
+  }
+  header :nth-child(5) {
+    order: 3;
+  }
+
   .shop-gender {
     grid-template-columns: 1fr 1fr;
   }
@@ -258,5 +288,9 @@ nav li {
 
   .top-sellers {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .newsletter {
+    grid-template-columns: 1fr 1fr;
   }
 }
