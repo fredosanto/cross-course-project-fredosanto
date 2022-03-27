@@ -138,7 +138,10 @@ nav li {
   text-align: center;
   max-width: 70%;
   top: 50px;
-  left: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-header_content p {
@@ -154,19 +157,8 @@ nav li {
   text-align: center;
 }
 
-/* .shop-image_container {
-  width: 100%;
-  height: 50%;
-}
-
 .shop-gender img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-.shop-gender img {
-  width: 375px;
   height: 375px;
   object-fit: cover;
 }
@@ -183,7 +175,7 @@ nav li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
-  margin: 50px 10px;
+  margin: 50px auto;
   grid-gap: 10px;
   text-align: center;
 }
@@ -204,8 +196,10 @@ nav li {
 
 .newsletter {
   background-color: #ebebed;
+  max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr;
+  margin: 50px auto;
   text-align: center;
   grid-gap: 10px;
 }
@@ -219,7 +213,7 @@ nav li {
 }
 
 .newsletter img {
-  width: 375px;
+  width: 100%;
   height: 375px;
   object-fit: cover;
 }
@@ -249,4 +243,20 @@ nav li {
 
 .social-media i {
   color: #ffff;
+}
+
+/* Media */
+@media (min-width: 750px) {
+  .shop-gender {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .shop-image_container h2 {
+    position: absolute;
+    color: #ffffff;
+  }
+
+  .top-sellers {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
