@@ -134,10 +134,11 @@ nav li {
 
 .shop-gender {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   max-width: 1000px;
   margin: 50px auto;
   grid-gap: 10px;
+  text-align: center;
 }
 
 /* .shop-gender h2 {
