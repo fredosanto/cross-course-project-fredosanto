@@ -5,12 +5,6 @@
 #113340 dark button, 
 #000000 black */
 
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
-
 * {
   margin: 0;
   padding: 0;
