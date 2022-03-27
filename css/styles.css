@@ -338,6 +338,7 @@ nav li {
   .footer-content a {
     color: #ffffff;
     text-align: left;
+    text-transform: none;
     font-size: 1rem;
   }
 
