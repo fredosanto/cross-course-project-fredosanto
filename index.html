@@ -42,6 +42,7 @@
       </div>
     </header>
     <main>
+      <div class="info-bar"></div>
       <section class="hero-header">
         <div class="hero-header_content">
           <h1>Hero Header</h1>
@@ -53,19 +54,19 @@
         </div>
       </section>
       <section class="shop-gender">
-        <h2>News Women</h2>
         <div class="shop-image_container">
+          <h2>News Women</h2>
           <img
             src="/images/women-main.jpg"
             alt="picture of a women hiking in the woods"
           />
+          <a href="#" class="btn">Shop Womens</a>
         </div>
-        <a href="#" class="btn">Shop Womens</a>
-        <h2>News Men's</h2>
         <div class="shop-image_container">
+          <h2>News Men's</h2>
           <img src="/images/men-main.jpg" alt="picture of a person skiing" />
+          <a href="#" class="btn">Shop Mens</a>
         </div>
-        <a href="#" class="btn">Shop Mens</a>
       </section>
       <section class="top-sellers">
         <h2>Top Sellers</h2>
@@ -74,19 +75,10 @@
             src="/images/raincoat_product.png"
             alt="picture of the black rain jacket"
           />
-          <p>Black rain jacket</p>
-          <p>4499,00 kr.</p>
-          <div class="product_colours">
-            <div>
-              <p>Colours:</p>
-            </div>
-            <div>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-            </div>
+          <div class="top-sellers_content">
+            <p>Black rain jacket</p>
+            <p>4499,00 kr.</p>
+          </div>
           </div>
         </div>
         <div class="top-sellers_products">
@@ -94,19 +86,10 @@
             src="/images/raincoat_product.png"
             alt="picture of the black rain jacket"
           />
-          <p>Black rain jacket</p>
-          <p>4499,00 kr.</p>
-          <div class="product_colours">
-            <div>
-              <p>Colours:</p>
-            </div>
-            <div>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-            </div>
+          <div class="top-sellers_content">
+            <p>Black rain jacket</p>
+            <p>4499,00 kr.</p>
+          </div>
           </div>
         </div>
         <div class="top-sellers_products">
@@ -114,19 +97,10 @@
             src="/images/raincoat_product.png"
             alt="picture of the black rain jacket"
           />
-          <p>Black rain jacket</p>
-          <p>4499,00 kr.</p>
-          <div class="product_colours">
-            <div>
-              <p>Colours:</p>
-            </div>
-            <div>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-            </div>
+          <div class="top-sellers_content">
+            <p>Black rain jacket</p>
+            <p>4499,00 kr.</p>
+          </div>
           </div>
         </div>
         <div class="top-sellers_products">
@@ -134,41 +108,52 @@
             src="/images/raincoat_product.png"
             alt="picture of the black rain jacket"
           />
-          <p>Black rain jacket</p>
-          <p>4499,00 kr.</p>
-          <div class="product_colours">
-            <div>
-              <p>Colours:</p>
-            </div>
-            <div>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-            </div>
+          <div class="top-sellers_content">
+            <p>Black rain jacket</p>
+            <p>4499,00 kr.</p>
+          </div>
           </div>
         </div>
       </section>
       <section class="newsletter">
-        <h2>Join The Club</h2>
-        <h3>Be a part of our family</h3>
-        <p>
-          By signing up for our newsletter subscription you will receive new
-          product releases, sales campaigns, exclusive discounts, get chances to
-          win amazing products and trips.
-        </p>
-        <h3>Enter Email:</h3>
-        <input type="email" name="email" id="email" />
-        <a href="#">Sign Up</a>
-        <img
-          src="/images/hiking-group_contact.jpg"
-          alt="picture of a hiking group in the mountains"
-        />
+        <div class="newsletter_content">
+          <h2>Join The Club</h2>
+          <h3>Be a part of our family</h3>
+          <p>
+            By signing up for our newsletter subscription you will receive new
+            product releases, sales campaigns, exclusive discounts, get chances to
+            win amazing products and trips.
+          </p>
+          <div>
+            <h3>Enter Email:</h3>
+            <input type="email" name="email" id="email" placeholder="your.email@mail.com"/>
+          </div>
+          <input type="submit" value="Sign Up" class="btn">
+        </div>
+        <div>
+          <img
+            src="/images/hiking-group_contact.jpg"
+            alt="picture of a hiking group in the mountains"
+          />
+        </div>
       </section>
     </main>
     <footer>
-      <img src="/images/rainy-days_logo_white.png" alt="logo" />
+      <div class="footer_grid">
+        <div>
+          <img src="/images/rainy-days_logo_white.png" alt="logo" class="logo"/>
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <div class="copyright">
+          Copyright &copy;
+        </div>
+      </div>
     </footer>
   </body>
 </html>
