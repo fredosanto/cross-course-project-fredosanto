@@ -76,6 +76,10 @@ input {
   padding: 5px 50px;
 }
 
+.submit {
+  cursor: pointer;
+}
+
 /* Header Section*/
 header {
   background-color: #ffffff;
@@ -243,7 +247,7 @@ nav li {
 .footer-content a {
   color: #ffffff;
   display: block;
-  margin: 0;
+  margin: 5px 0;
   padding-bottom: 5px;
   font-size: 0.6em;
   text-align: start;
