@@ -1,9 +1,13 @@
-/* Colours */
-/* #ffffff white, 
-#ebebed light grey, 
-#95b0b8 light button, 
-#113340 dark button, 
-#000000 black */
+:root {
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #ebebed;
+  --footer-textbar-color: #000000;
+  --dark-btn-color: #113340;
+  --light-btn-color: #95b0b8;
+  --btn-text-color: #ffffff;
+  --text-color: #000000;
+  --text-footer-color: #ffffff;
+}
 
 * {
   margin: 0;
@@ -15,15 +19,14 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
-  color: #000000;
+  color: var(--text-color);
   line-height: 1.5;
 }
 
 h1,
 h2,
 h3,
-p,
-a {
+p {
   margin: 10px;
 }
 
@@ -40,7 +43,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: var(--text-color);
 }
 
 ul {
@@ -48,14 +51,14 @@ ul {
 }
 
 i {
-  color: #113340;
+  color: var(--dark-btn-color);
   font-size: 2rem;
   padding: 5px;
 }
 
 .btn {
-  color: #ffff;
-  background-color: #113340;
+  color: var(--btn-text-color);
+  background-color: var(--dark-btn-color);
   font-size: 1em;
   font-weight: 600;
   text-transform: uppercase;
@@ -76,7 +79,7 @@ input {
 
 /* Header Section*/
 header {
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -91,12 +94,17 @@ header a {
   width: 10rem;
 }
 
+.logo a {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   margin-right: 25px;
   display: none;
   position: fixed;
   top: 95px;
-  background: #ffffff;
+  background: var(--primary-bg-color);
   z-index: 100;
   left: 0px;
 }
@@ -120,7 +128,7 @@ nav li {
 
 /* Main Section */
 .info-bar {
-  background-color: #000000;
+  background-color: var(--footer-textbar-color);
   height: 20px;
 }
 
@@ -150,7 +158,7 @@ nav li {
 }
 
 .shop-gender_container {
-  background-color: #ebebed;
+  background-color: var(--secondary-bg-color);
 }
 
 .shop-gender {
@@ -200,7 +208,7 @@ nav li {
 }
 
 .newsletter {
-  background-color: #ebebed;
+  background-color: var(--secondary-bg-color);
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -229,7 +237,7 @@ nav li {
 
 /* Footer */
 .footer-container {
-  background-color: #000000;
+  background-color: var(--footer-textbar-color);
   height: 20vh;
   padding: 10px 5px;
   display: flex;
@@ -239,7 +247,7 @@ nav li {
 }
 
 .footer-content a {
-  color: #ffffff;
+  color: var(--text-footer-color);
   display: block;
   margin: 5px 0;
   padding-bottom: 5px;
@@ -252,13 +260,13 @@ nav li {
 }
 
 .copyright {
-  background-color: #000000;
-  color: #ffff;
+  background-color: var(--footer-textbar-color);
+  color: var(--text-footer-color);
 }
 
 .social-media i {
   display: block;
-  color: #ffff;
+  color: var(--text-footer-color);
 }
 
 .copyright-container {
@@ -267,6 +275,60 @@ nav li {
 
 /* Media */
 @media (min-width: 750px) {
+
+  .shop-gender {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .shop-image_container h2 {
+    position: absolute;
+    color: #ffffff;
+  }
+
+  .top-sellers {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .newsletter {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .newsletter_content {
+    text-align: center;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-media i {
+    display: inline-block;
+    color: var(--text-footer-color);
+  }
+
+  .footer-container {
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-content {
+    max-width: 200px;
+  }
+
+  .footer-content a {
+    color: var(--text-footer-color);
+    text-align: left;
+    text-transform: none;
+    font-size: 1rem;
+  }
+
+  .footer-logo {
+    margin-right: 0;
+  }
+}
+
+
+@media (min-width: 860px) {
   header {
     flex-direction: row;
     justify-content: space-evenly;
@@ -296,53 +358,4 @@ nav li {
     order: 3;
   }
 
-  .shop-gender {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .shop-image_container h2 {
-    position: absolute;
-    color: #ffffff;
-  }
-
-  .top-sellers {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .newsletter {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .newsletter_content {
-    text-align: center;
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .social-media i {
-    display: inline-block;
-    color: #ffff;
-  }
-
-  .footer-container {
-    justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .footer-content {
-    max-width: 200px;
-  }
-
-  .footer-content a {
-    color: #ffffff;
-    text-align: left;
-    text-transform: none;
-    font-size: 1rem;
-  }
-
-  .footer-logo {
-    margin-right: 0;
-  }
 }
