@@ -213,7 +213,7 @@ nav li {
   grid-template-columns: 1fr;
   max-width: 1000px;
   margin: 50px auto;
-  grid-gap: 10px;
+  gap: 10px;
   text-align: center;
 }
 
@@ -236,7 +236,7 @@ nav li {
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
   margin: 50px auto;
-  grid-gap: 10px;
+  gap: 10px;
   text-align: center;
 }
 
@@ -260,7 +260,7 @@ nav li {
   grid-template-columns: 1fr;
   margin: 50px auto;
   text-align: center;
-  grid-gap: 10px;
+  gap: 10px;
 }
 
 .newsletter h2 {
