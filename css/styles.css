@@ -7,6 +7,9 @@
   --btn-text-color: #ffffff;
   --text-color: #000000;
   --text-footer-color: #ffffff;
+  
+  font-size: 100%;
+
 }
 
 * {
@@ -21,6 +24,26 @@ body {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
   color: var(--text-color);
   line-height: 1.5;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p{
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 h1,
@@ -44,10 +67,12 @@ img {
 a {
   text-decoration: none;
   color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 300;
 }
 
-ul {
-  list-style-type: none;
+.active {
+  text-decoration: 2px underline;
 }
 
 i {
@@ -59,8 +84,8 @@ i {
 .btn {
   color: var(--btn-text-color);
   background-color: var(--dark-btn-color);
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 900;
   text-transform: uppercase;
   padding: 15px 10px;
   border-radius: 6px;
@@ -77,6 +102,17 @@ input {
   cursor: pointer;
 }
 
+/* Hover */
+nav ul a:hover {
+  color: var(--btn-text-color);
+  background-color: var(--dark-btn-color);
+}
+
+.btn:hover {
+  color: var(--text-color);
+  background-color: var(--light-btn-color);
+}
+
 /* Header Section*/
 header {
   background-color: var(--primary-bg-color);
@@ -84,6 +120,11 @@ header {
   align-items: center;
   justify-content: space-evenly;
   padding: 5px 5px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
 }
 
 header a {
@@ -102,7 +143,8 @@ header a {
 nav {
   margin-right: 25px;
   display: none;
-  position: fixed;
+  position: absolute;
+  text-align: left;
   top: 95px;
   background: var(--primary-bg-color);
   z-index: 100;
@@ -111,6 +153,7 @@ nav {
 
 nav ul {
   padding: 0px;
+  list-style-type: none;
 }
 
 nav li {
@@ -127,6 +170,10 @@ nav li {
 }
 
 /* Main Section */
+.spacing-navbar {
+  margin-bottom: 102.65px;
+}
+
 .info-bar {
   background-color: var(--footer-textbar-color);
   height: 20px;
@@ -195,7 +242,6 @@ nav li {
 
 .top-sellers h2 {
   grid-column: -1/1;
-  font-weight: 600;
 }
 
 .top-sellers_content {
@@ -221,10 +267,6 @@ nav li {
   font-weight: 900;
 }
 
-.newsletter h3 {
-  font-weight: 600;
-}
-
 .newsletter img {
   width: 100%;
   height: 375px;
@@ -238,7 +280,7 @@ nav li {
 /* Footer */
 .footer-container {
   background-color: var(--footer-textbar-color);
-  height: 20vh;
+  height: 25vh;
   padding: 10px 5px;
   display: flex;
   flex-direction: row;
@@ -246,12 +288,15 @@ nav li {
   justify-content: space-between;
 }
 
+.footer-content {
+  max-height: 100%;
+}
+
 .footer-content a {
   color: var(--text-footer-color);
   display: block;
   margin: 5px 0;
   padding-bottom: 5px;
-  font-size: 0.6em;
   text-align: start;
 }
 
@@ -319,7 +364,6 @@ nav li {
     color: var(--text-footer-color);
     text-align: left;
     text-transform: none;
-    font-size: 1rem;
   }
 
   .footer-logo {
