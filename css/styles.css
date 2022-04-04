@@ -176,7 +176,10 @@ nav li {
 
 .info-bar {
   background-color: var(--footer-textbar-color);
-  height: 20px;
+  color: var(--btn-text-color);
+  text-align: center;
+  margin: auto;
+  text-decoration: underline;
 }
 
 .hero-header {
