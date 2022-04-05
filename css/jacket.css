@@ -26,3 +26,7 @@
 .product-section_container {
     display: grid;
 }
+
+.colours input:checked ~ label i {
+    text-decoration: underline;
+}
