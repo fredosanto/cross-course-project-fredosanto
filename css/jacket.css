@@ -1,0 +1,24 @@
+.back-button_container {
+    display: flex;
+    height: 50px;
+    width: 120px;
+    padding: 2px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.back-button_icon,
+.back-button_text {
+    display: inline-block;
+    padding: 0;
+}
+
+.back-button_text {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.back-button_icon i {
+    font-size: 1.5rem;
+}

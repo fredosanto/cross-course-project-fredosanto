@@ -7,6 +7,11 @@
 
 }
 
+.products-heading {
+    text-align: center;
+    font-weight: 600;
+}
+
 .jacket-list_container {
     display: grid;
     text-align: center;
@@ -19,12 +24,14 @@
     font-size: 1.5rem;
 }
 
+.jacket-list_content i, p{
+    margin: 2px;
+    padding: 0 2px 2px 2px ;
+}
+
 .color-1 {color: var(--jacket-color-blk);}
 .color-2 {color: var(--jacket-color-red);}
 .color-3 {color: var(--jacket-color-green);}
 .color-4 {color: var(--jacket-color-blue);}
 .color-5 {color: var(--jacket-color-cream);}
 
-.color-choice i{
-    border: 1px solid #000000;
-}
