@@ -22,3 +22,7 @@
 .back-button_icon i {
     font-size: 1.5rem;
 }
+
+.product-section_container {
+    display: grid;
+}
