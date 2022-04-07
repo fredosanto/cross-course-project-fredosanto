@@ -27,6 +27,18 @@
     display: grid;
 }
 
-.colours input:checked ~ label i {
+.sizes input:checked + label {
     text-decoration: underline;
+}
+
+.sizes input {
+    display: none;
+}
+
+.colours input:checked + label i {
+    text-decoration: underline;
+}
+
+.colours input {
+    display: none;
 }
