@@ -8,7 +8,7 @@
       name="description"
       content="Colourful raincoats with traditional nordic designs"
     />
-    <title>Rainy Days | Contact Us</title>
+    <title>Rainy Days | Products</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,24 +16,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <script
       src="https://kit.fontawesome.com/c9a6228c0a.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <div class="spacing-navbar"></div>
     <header>
-      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" name="hamburger-menu" id="hamburger-menu" />
-      <nav class="nav-elements">
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/products.html">Men</a></li>
-          <li><a href="/products.html">Women</a></li>
-          <li><a href="/about.html">About Us</a></li>
-          <li><a href="#" class="active">Contact Us</a></li>
-        </ul>
-      </nav>
       <div class="logo logo-main">
         <a href="/index.html">
           <img
@@ -43,12 +35,62 @@
           />
         </a>
       </div>
-      <div>
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-shopping-cart"></i>
-      </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <div class="info-bar">Free shipping on all orders above 6500,00 NOK.</div>
+    <main>
+      <div class="back-button_container">
+        <a href="/index.html">
+          <div class="back-button_icon">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <span class="back-button_text">Back</span>
+        </a>
+      </div>
+      <section>
+        <h1>Checkout</h1>
+        <div class="checkout_container">
+          <form action="">
+            <div class="personal_info">
+              <label for="first-name">First name*</label>
+              <input type="text" name="first-name" id="first-name" />
+
+              <label for="last-name">Last name*</label>
+              <input type="text" name="last-name" id="last-name" />
+
+              <label for="email">Email address*</label>
+              <input type="email" name="email" id="email" />
+
+              <label for="phone">Phone number*</label>
+              <input type="tel" name="phone" id="phone" />
+
+              <label for="address">Address*</label>
+              <input type="text" name="address" id="address" />
+
+              <label for="zip-code">Zip code*</label>
+            </div>
+            <div class="payment info">
+              <label for="card-number">Card number*</label>
+              <input type="number" name="card-number" id="card-number" />
+
+              <label for="cvc">CVC*</label>
+              <input type="number" name="cvc" id="cvc" />
+
+              <label for="card-name">Cardholder name*</label>
+              <input type="text" name="card-name" id="card-name" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="logo footer-logo">
+          <img src="/images/rainy-days_logo_white.png" alt="logo" />
+        </div>
+      </div>
+      <div class="copyright-container">
+        <div class="copyright">Copyright &copy;</div>
+      </div>
+    </footer>
   </body>
 </html>

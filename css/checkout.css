@@ -1,0 +1,14 @@
+.logo-main {
+    margin: auto;
+}
+
+.footer-container {
+    background-color: var(--footer-textbar-color);
+    height: 25vh;
+    padding: 10px 5px;
+    display: block;
+}
+
+.footer-logo {
+    margin: auto;
+}

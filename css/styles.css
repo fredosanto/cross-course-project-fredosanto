@@ -322,6 +322,7 @@ nav li {
 
 .footer-content {
   max-height: 100%;
+  padding-left: 10px;
 }
 
 .footer-content a {
@@ -345,6 +346,7 @@ nav li {
 .social-media i {
   display: block;
   color: var(--text-footer-color);
+  padding-right: 10px;
 }
 
 .copyright-container {
