@@ -1,9 +1,16 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Back Button */
 .back-button_container {
     display: flex;
     height: 50px;
     width: 120px;
     padding: 2px;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -14,17 +21,43 @@
 }
 
 .back-button_text {
-    font-size: 1.5rem;
     text-decoration: underline;
-    font-weight: 600;
+    font-weight: 400;
 }
 
-.back-button_icon i {
-    font-size: 1.5rem;
+.back-button_icon i,
+.back-button_text{
+    font-size: 1rem;
 }
+
+/* Product Section */
 
 .product-section_container {
     display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 10px auto;
+    gap: 10px;
+    text-align: center;
+}
+
+.jacket-image_small {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 0px auto;
+    gap: 10px;
+    text-align: center;
+}
+
+form {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid #000000;
+    margin: 10px;
+}
+
+.sizes, .colours, .add-to-cart_btn {
+    margin: 10px;
 }
 
 .sizes input:checked + label {
@@ -41,4 +74,16 @@
 
 .colours input {
     display: none;
+}
+
+.product-text_container {
+    text-align: left;
+    margin: 10px;
+}
+
+.product-text_list{
+    list-style-position: inside;
+    left: 10px;
+    position: relative;
+    list-style-type: '- ';
 }

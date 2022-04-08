@@ -297,6 +297,7 @@ nav li {
 
 .footer-content a {
   color: var(--text-footer-color);
+  font-size: .75rem;
   display: block;
   margin: 5px 0;
   padding-bottom: 5px;
