@@ -100,6 +100,9 @@ input {
 
 .submit {
   cursor: pointer;
+  border-style: none;
+  font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
 }
 
 /* Hover */
@@ -111,6 +114,32 @@ nav ul a:hover {
 .btn:hover {
   color: var(--text-color);
   background-color: var(--light-btn-color);
+}
+
+/* Back Button */
+.back-button_container {
+  display: flex;
+  height: 50px;
+  width: 120px;
+  padding: 2px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.back-button_icon,
+.back-button_text {
+  display: inline-block;
+  padding: 0;
+}
+
+.back-button_text {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.back-button_icon i,
+.back-button_text{
+  font-size: 1rem;
 }
 
 /* Header Section*/

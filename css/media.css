@@ -54,6 +54,18 @@
   .jacket-list_container {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+  .product-section_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+  }
+
+  .jacket-image_small {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
 }
 
 
@@ -87,4 +99,16 @@
     order: 3;
   }
 
+  .jacket-image_small {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-section_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+  }
 }
