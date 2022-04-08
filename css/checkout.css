@@ -1,14 +1,51 @@
-.logo-main {
+.logo-main,
+.footer-logo {
     margin: auto;
+}
+
+.checkout {
+    text-align: center;
+}
+
+.form-items {
+    height: 50px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+input {
+    
+}
+
+.checkout_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.payment-info {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid #000000;
+    margin: 10px 10px;
+}
+
+.checkout-btn {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .footer-container {
     background-color: var(--footer-textbar-color);
     height: 25vh;
+    max-width: 100%;
     padding: 10px 5px;
     display: block;
 }
 
-.footer-logo {
-    margin: auto;
-}

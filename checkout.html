@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Colourful raincoats with traditional nordic designs"
-    />
+    <meta name="description" content="Safe payment and fast delivery" />
     <title>Rainy Days | Products</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,37 +43,54 @@
           <span class="back-button_text">Back</span>
         </a>
       </div>
-      <section>
+      <section class="checkout">
         <h1>Checkout</h1>
         <div class="checkout_container">
           <form action="">
             <div class="personal_info">
-              <label for="first-name">First name*</label>
-              <input type="text" name="first-name" id="first-name" />
-
-              <label for="last-name">Last name*</label>
-              <input type="text" name="last-name" id="last-name" />
-
-              <label for="email">Email address*</label>
-              <input type="email" name="email" id="email" />
-
-              <label for="phone">Phone number*</label>
-              <input type="tel" name="phone" id="phone" />
-
-              <label for="address">Address*</label>
-              <input type="text" name="address" id="address" />
-
-              <label for="zip-code">Zip code*</label>
+              <div class="form-items">
+                <label for="first-name">First name*</label>
+                <input type="text" name="first-name" id="first-name" />
+              </div>
+              <div class="form-items">
+                <label for="last-name">Last name*</label>
+                <input type="text" name="last-name" id="last-name" />
+              </div>
+              <div class="form-items">
+                <label for="email">Email address*</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-items">
+                <label for="phone">Phone number*</label>
+                <input type="tel" name="phone" id="phone" />
+              </div>
+              <div class="form-items">
+                <label for="address">Address*</label>
+                <input type="text" name="address" id="address" />
+              </div>
+              <div class="form-items">
+                <label for="zip-code">Zip code*</label>
+                <input type="text" name="zip-code" id="zip-code" />
+              </div>
             </div>
-            <div class="payment info">
-              <label for="card-number">Card number*</label>
-              <input type="number" name="card-number" id="card-number" />
-
-              <label for="cvc">CVC*</label>
-              <input type="number" name="cvc" id="cvc" />
-
-              <label for="card-name">Cardholder name*</label>
-              <input type="text" name="card-name" id="card-name" />
+            <div class="payment-info">
+              <div class="form-items">
+                <label for="card-number">Card number*</label>
+                <input type="number" name="card-number" id="card-number" />
+              </div>
+              <div class="form-items">
+                <label for="cvc">CVC*</label>
+                <input type="number" name="cvc" id="cvc" />
+              </div>
+              <div class="form-items">
+                <label for="card-name">Cardholder name*</label>
+                <input type="text" name="card-name" id="card-name" />
+              </div>
+              <input
+                type="submit"
+                value="Purchase"
+                class="btn submit checkout-btn"
+              />
             </div>
           </form>
         </div>
