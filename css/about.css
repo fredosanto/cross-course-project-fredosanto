@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+.about_container {
+    background-color: var(--primary-bg-color);
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px auto;
+    text-align: center;
+    gap: 10px;
+  }
+  
+.about_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.about_content p {
+    text-align: left;
+}
