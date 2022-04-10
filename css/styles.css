@@ -240,6 +240,7 @@ nav li {
 
 .hero-header_content p {
   margin: 10px 0;
+  font-weight: 400;
 }
 
 .shop-gender_container {
@@ -305,9 +306,13 @@ nav li {
   font-weight: 900;
 }
 
+.newsletter_content {
+  margin: auto;
+}
+
 .newsletter img {
   width: 100%;
-  height: 375px;
+  height: 100%;
   object-fit: cover;
 }
 
