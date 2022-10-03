@@ -81,6 +81,15 @@ i {
   padding: 5px;
 }
 
+input {
+  padding: 10px 5px;
+  width: 100%;
+  border: 1px solid var(--text-color);
+  border-radius: 6px;
+  outline: none;
+}
+
+
 .btn {
   color: var(--btn-text-color);
   background-color: var(--dark-btn-color);
@@ -94,11 +103,6 @@ i {
   min-width: 135px;
 }
 
-input {
-  padding: 5px 50px;
-  border: 1px solid var(--text-color);
-  border-radius: 6px;
-}
 
 .submit {
   cursor: pointer;

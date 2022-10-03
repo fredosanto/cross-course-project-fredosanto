@@ -72,12 +72,16 @@
       <section class="hero-header">
         <div class="hero-header_content">
           <h1>New adventures</h1>
-          <p>
-            A new line and technonoly ready to «Push the Comfort Zone». In brand
-            new colours and amazing design, we can finally present the SS22
-            Collection is finally here.
-          </p>
-          <a href="/products.html" class="btn">Explore the collection</a>
+          <div class="hero-text_background">
+            <p>
+              A new line and technonoly ready to «Push the Comfort Zone». In
+              brand new colours and amazing design, we can finally present the
+              SS22 Collection is finally here.
+            </p>
+            <a href="/products.html" class="btn hero-button"
+              >Explore the collection</a
+            >
+          </div>
         </div>
       </section>
       <section class="shop-gender_container">
@@ -166,13 +170,15 @@
             to win amazing products and trips.
           </p>
           <div>
-            <h3>Enter Email:</h3>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="your.email@mail.com"
-            />
+            <form action="">
+              <label for="email" class="newsletter-email">Enter Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your.email@mail.com"
+              />
+            </form>
           </div>
           <input type="submit" value="Sign Up" class="btn submit" />
         </div>
