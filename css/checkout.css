@@ -50,17 +50,28 @@
 
 .payment_info {
     border: 1px solid #000000;
-}
-
-.payment_info {
     background-color: var(--secondary-bg-color);
-    height: 250px;
 }
 
 .form-items {
-    margin: 10px auto;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.payment-items {
+    width: 75%;
 }
 
 label {
     display: block;
+}
+
+.checkout-btn {
+    border-style: none;
+    margin: auto;
+}
+
+.payment-button {
+    text-align: center;
+    margin: 30px 70px;
 }

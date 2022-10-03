@@ -10,20 +10,21 @@ h1 {
     margin: 50px auto;
     text-align: center;
     gap: 10px;
-  }
+}
   
-  .contact_container img {
+.contact_container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
   
-  .newsletter .btn {
-    border-style: none;
-  }
+.submit {
+   border-style: none;
+   margin: 20px auto;
+}
 
 .form-items {
-    margin: 10px auto;
+    margin: 25px auto;
     text-align: left;
 }
 
@@ -36,5 +37,6 @@ textarea {
   width: 100%;
   border: 1px solid var(--text-color);
   border-radius: 6px;
+  outline: none;
 }
 
