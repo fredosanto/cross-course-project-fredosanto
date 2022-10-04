@@ -47,6 +47,7 @@ textarea {
   border: 3px solid black;
   border-radius: 6px;
   display: none;
+  padding: 10px;
 }
 
 .form-error {
@@ -55,6 +56,7 @@ textarea {
   color: white;
   border-radius: 6px;
   display: none;
+  padding: 10px;
 }
 
 .error-message {
