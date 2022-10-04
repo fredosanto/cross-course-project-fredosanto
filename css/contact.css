@@ -38,5 +38,27 @@ textarea {
   border: 1px solid var(--text-color);
   border-radius: 6px;
   outline: none;
+  resize: none;
+}
+
+/* FORM VALIDATION */
+.form-success {
+  background-color: yellow;
+  border: 3px solid black;
+  border-radius: 6px;
+  display: none;
+}
+
+.form-error {
+  background-color: red;
+  border: 3px solid black;
+  color: white;
+  border-radius: 6px;
+  display: none;
+}
+
+.error-message {
+  display: none;
+  color: red;
 }
 

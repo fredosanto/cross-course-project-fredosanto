@@ -23,7 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Hotjar Tracking Code for https://sharp-hawking-a0d0ea.netlify.app -->
-    <script>
+    <!-- <script>
       (function (h, o, t, j, a, r) {
         h.hj =
           h.hj ||
@@ -37,7 +37,7 @@
         r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+    </script> -->
   </head>
   <body>
     <div class="spacing-navbar"></div>
@@ -86,37 +86,58 @@
             all inquiries within 2-4 days.
           </p>
           <div class="contact_form">
-            <form action="">
+            <form id="contact_form" action="">
+              <div class="form-success">
+                <strong>Success!</strong> We have recieved your submission, and
+                will get to you soon!
+              </div>
+              <div class="form-error">
+                <strong>Woops!</strong> Something went wrong, please try again.
+              </div>
               <div class="form-items">
-                <label for="name">Name</label>
+                <label for="name"><strong>Name</strong> (required):</label>
                 <input
                   type="text"
                   name="name"
                   id="name"
                   placeholder="John Harrison"
                 />
+                <div class="error-message name-error">
+                  * Not valid, please enter your name.
+                </div>
               </div>
               <div class="form-items">
-                <label for="email">Email</label>
+                <label for="email"><strong>Email</strong> (required):</label>
                 <input
                   type="email"
                   name="email"
                   id="email"
                   placeholder="your.email@email.com"
                 />
+                <div class="error-message email-error">
+                  * Not an valid email, please enter your email.
+                </div>
               </div>
               <div class="form-items">
-                <label for="phone">Phone number</label>
+                <label for="phone"
+                  ><strong>Phone number</strong> (required):</label
+                >
                 <input
                   type="tel"
                   name="phone"
                   id="phone"
-                  placeholder="99999999"
+                  placeholder="999-99-999"
+                  minlength="8"
+                  maxlength="20"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                 />
+                <div class="error-message phone-error">
+                  * Not a valid number, please try this format: 000-00-000.
+                </div>
               </div>
               <div class="form-items">
                 <label for="comment"
-                  >Comment <em>(maximum 250 characters)</em></label
+                  ><strong>Comment</strong> (50 to 250 characters):</label
                 >
                 <textarea
                   name="comment"
@@ -125,6 +146,9 @@
                   rows="10"
                   placeholder="Write your text here..."
                 ></textarea>
+                <div class="error-message comment-error">
+                  * Empty field or too few/many characters in your inquiry.
+                </div>
               </div>
               <input type="submit" value="Send" class="btn submit" />
             </form>
@@ -160,5 +184,6 @@
         <div class="copyright">Copyright &copy;</div>
       </div>
     </footer>
+    <script src="/js/contact-form.js"></script>
   </body>
 </html>
