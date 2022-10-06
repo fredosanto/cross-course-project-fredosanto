@@ -89,6 +89,10 @@ input {
   outline: none;
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+}
 
 .btn {
   color: var(--btn-text-color);
