@@ -1,3 +1,8 @@
+import { validateInputLength } from './validation.js';
+import { emailValidation } from './validation.js';
+import { phoneValidation } from './validation.js';
+import { commentValidation } from './validation.js';
+
 const contactForm = document.querySelector("#contact_form");
 const errorMessage = document.querySelector(".form-error");
 const successMessage = document.querySelector(".form-success")
@@ -7,11 +12,11 @@ const nameError = document.querySelector(".name-error");
 
 const email = document.querySelector("#email");
 const emailError = document.querySelector(".email-error");
-const emailRegEx = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
+// const emailRegEx = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
 
 const phoneNumber = document.querySelector("#phone");
 const phoneNumberError = document.querySelector(".phone-error");
-const phoneRegEx = /^\d+$/;
+// const phoneRegEx = /^\d+$/;
 
 const comment = document.querySelector("#comment");
 const commentError = document.querySelector(".comment-error");
@@ -64,28 +69,3 @@ function submitContactForm() {
 
 contactForm.addEventListener("submit", submitContactForm);
 
-function emailValidation(email) {
-    const checkEmailFormat = emailRegEx.test(email);
-    return checkEmailFormat;
-}
-
-function phoneValidation(phoneNumber) {
-    const checkPhoneFormat = phoneRegEx.test(phoneNumber);
-    return checkPhoneFormat;
-}
-
-function commentValidation(value, requiredLength) {
-    if ((value.trim().length < requiredLength) && (value.trim().length) > 49) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function validateInputLength(value, requiredLength) {
-    if (value.trim().length > requiredLength) {
-        return true;
-    } else {
-        return false;
-    }
-}

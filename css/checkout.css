@@ -55,6 +55,7 @@
 
 .form-items {
     margin: 25px auto;
+    padding: 5px;
     text-align: left;
 }
 
@@ -75,3 +76,30 @@ label {
     text-align: center;
     margin: 30px 70px;
 }
+
+
+/* CHECKOUT VALIDATION */
+.error-message {
+    display: none;
+    color: red;
+  }
+
+.checkout-success {
+    background-color: #A1C298;
+    border: 3px solid black;
+    border-radius: 6px;
+    display: none;
+    padding: 10px;
+    margin: 5px;
+  }
+
+.checkout-error {
+    background-color: #FA7070;
+    border: 3px solid black;
+    color: black;
+    border-radius: 6px;
+    display: none;
+    padding: 10px;
+    margin: 5px;
+  }
+
