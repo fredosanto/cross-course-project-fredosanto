@@ -100,7 +100,6 @@ input {
   border-radius: 6px;
   margin: 5px auto;
   display: inline-block;
-  min-width: 135px;
 }
 
 
@@ -121,6 +120,26 @@ nav ul a:hover {
   color: var(--text-color);
   background-color: var(--light-btn-color);
 }
+
+.add-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.favourite {
+  background-color: green;
+}
+
+.add-cart,
+.favourite {
+  font-weight: 600;
+  padding: 5px 5px;
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+}
+
 
 /* .btn:focus {
   background-color: var(--secondary-bg-color);
