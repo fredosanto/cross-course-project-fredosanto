@@ -59,7 +59,7 @@ function submitCheckout() {
         emailCheckoutError.style.display = "block";
     }
     
-    if (phoneValidation(phoneCheckout.value, 1) === true) {
+    if (validateInputLength(phoneCheckout.value, phoneValidation(phoneCheckout.value)) === true) {
         phoneCheckoutError.style.display = "none";
     } else {
         phoneCheckoutError.style.display = "block";
@@ -96,15 +96,20 @@ function submitCheckout() {
     }
 
 
-    if (validateInputLength(name.value, 1) && 
-    validateInputLength(email.value, emailValidation(email.value)) && 
-    validateInputLength(phoneNumber.value, phoneValidation(phoneNumber.value)) && 
-    commentValidation(comment.value, 249)) {
-        successMessage.style.display = "block";
-        errorMessage.style.display = "none";
+    if (validateInputLength(firstName.value, 1) &&
+    validateInputLength(lastName.value, 1) && 
+    validateInputLength(emailCheckout.value, emailValidation(emailCheckout.value)) &&
+    validateInputLength(phoneCheckout.value, phoneValidation(phoneNumber.value)) &&
+    validateInputLength(address.value, 1) &&
+    validateInputLength(zipCode.value, 1) &&
+    validateInputLength(cardNumber.value, 1) &&
+    validateInputLength(cvcCode.value, 1) &&
+    validateInputLength(cardHolder.value, 1)) {
+        checkoutSuccess.style.display = "block";
+        checkoutError.style.display = "none";
     } else {
-        errorMessage.style.display = "block";
-        successMessage.style.display = "none";
+        checkoutError.style.display = "block";
+        checkoutSuccess.style.display = "none";
     }
 
 
