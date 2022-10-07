@@ -14,6 +14,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  .best-products_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   .newsletter {
     grid-template-columns: 1fr 1fr;
   }

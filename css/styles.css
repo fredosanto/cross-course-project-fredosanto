@@ -131,13 +131,22 @@ nav ul a:hover {
   gap: 5px;
 }
 
-.favourite {
+.add-cart {
   background-color: green;
 }
+
+/* .add-cart:hover span {
+  display: none;
+}
+
+.add-cart:hover:before{
+  content: '+';
+} */
 
 .add-cart,
 .favourite {
   font-weight: 600;
+  font-size: 0.8rem;
   padding: 5px 5px;
   width: 50%;
   text-align: center;

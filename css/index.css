@@ -1,3 +1,6 @@
+h2 {
+  text-align: center;
+}
 
 .hero-header {
     background-image: url(/images/header.jpg);
@@ -68,7 +71,10 @@
     font-weight: 600;
   }
   
-  .top-sellers {
+  
+
+/* TOP SELLERS SECTION */
+  .best-products_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1000px;
@@ -76,21 +82,13 @@
     gap: 10px;
     text-align: center;
   }
-  
-  .top-sellers h2 {
-    grid-column: -1/1;
-  }
-  
-  .top-sellers_content {
-    margin: 5px auto;
+
+  .best-product p {
     text-align: left;
-  }
-  
-  .top-sellers img {
-    width: 100%;
+    text-transform: uppercase;
   }
 
-  
+/* NEWSLETTER */
   .newsletter {
     background-color: var(--secondary-bg-color);
     max-width: 100%;
