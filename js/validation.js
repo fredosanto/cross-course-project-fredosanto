@@ -10,6 +10,12 @@ function phoneValidation(phoneNumber) {
     return checkPhoneFormat;
 }
 
+function checkoutPhoneValidation(phoneCheckout) {
+    const phoneRegEx = /^\d+$/;
+    const checkPhoneFormat = phoneRegEx.test(phoneCheckout);
+    return checkPhoneFormat;
+}
+
 function commentValidation(value, requiredLength) {
     if ((value.trim().length < requiredLength) && (value.trim().length) > 49) {
         return true;
@@ -26,4 +32,4 @@ function validateInputLength(value, requiredLength) {
     }
 }
 
-export { emailValidation, phoneValidation, commentValidation, validateInputLength};
+export { emailValidation, phoneValidation, checkoutPhoneValidation, commentValidation, validateInputLength};

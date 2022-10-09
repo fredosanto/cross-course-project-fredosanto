@@ -1,39 +1,40 @@
+import { getInCart } from "./utils/addToCart.js";
 import jackets from "./news.js";
 
 const bestProductContainer = document.querySelector(".best-products_container");
-const bestProductImgContainer = document.querySelector(".best-products_image")
 
-
-// jackets.forEach(jacket => {
-//     bestProductContainer.innerHTML += `<div class="best-product"
-//                                         <div>
-//                                         <a href="/jacket.html">
-//                                         <img class="best-product_img" src="${jacket.imgFile}">
-//                                         </a>
-//                                         <p>${jacket.name}</p>
-//                                         <p>${jacket.price}</p>
-//                                         <div class="add-buttons">
-//                                             <button class="add-cart btn">Add to cart</button>
-//                                             <button class="favourite btn">Add to favourite</button>
-//                                         </div>
-//                                         </div>
-//                                          </div>`
-// })
+const cartItems = getInCart();
 
 jackets.forEach((jacket) => {
+
+
+    let cssClass = "fas";
+
+    const isJacketIncluded = cartItems.find(function(added) {
+        console.log(added)
+
+        return added.name === jacket.name;
+    })
+
+    // console.log(isJacketIncluded);
+
+    if(isJacketIncluded) {
+        cssClass = "far";
+    }
+
+
     bestProductContainer.innerHTML += `<div class="best-product"
-                                        <div>
-                                        <a href="/jacket.html">
-                                        <img class="best-product_img" src="${jacket.imgFile}">
-                                        </a>
-                                        <p>${jacket.name}</p>
-                                        <p>${jacket.price}</p>
-                                        <div class="add-buttons">
-                                            <i class="fas fa-cart-shopping add-cart" data-name="${jacket.name}" data-price="${jacket.price}"></i>
-                                            
-                                        </div>
-                                        </div>
-                                         </div>`
+                                            <div>
+                                                <a href="/jacket.html">
+                                                    <img class="best-product_img" src="${jacket.imgFile}">
+                                                </a>
+                                                <p>${jacket.name}</p>
+                                                <p>${jacket.price}</p>
+                                                <div class="add-buttons">
+                                                    <i class="${cssClass} fa-cart-shopping add-cart" data-name="${jacket.name}" data-price="${jacket.price}"></i>
+                                                </div>
+                                            </div>
+                                        </div>`
 });
 
 
@@ -45,8 +46,8 @@ addCartButtons.forEach((button) => {
 
 function handleClick() {
     // console.log(event);
-    this.classList.toggle("fas");
     this.classList.toggle("far");
+    this.classList.toggle("fas");
     
     const jacketName = this.dataset.name;
     const jacketPrice = this.dataset.price;
@@ -73,15 +74,6 @@ function handleClick() {
 
 };
 
-function getInCart() {
-    const cart = localStorage.getItem("cartItems");
-
-    if(cart === null) {
-        return [];
-    } else {
-        return JSON.parse(cart);
-    }
-}
 
 function saveItem(cart) {
     localStorage.setItem("cartItems", JSON.stringify(cart));

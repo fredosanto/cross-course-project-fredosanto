@@ -1,6 +1,6 @@
 import { validateInputLength } from './validation.js';
 import { emailValidation } from './validation.js';
-import { phoneValidation } from './validation.js';
+import { checkoutPhoneValidation } from './validation.js';
 
 
 const checkoutForm = document.querySelector("#checkout_form")
@@ -59,7 +59,7 @@ function submitCheckout() {
         emailCheckoutError.style.display = "block";
     }
     
-    if (validateInputLength(phoneCheckout.value, phoneValidation(phoneCheckout.value)) === true) {
+    if (validateInputLength(phoneCheckout.value, checkoutPhoneValidation(phoneCheckout.value)) === true) {
         phoneCheckoutError.style.display = "none";
     } else {
         phoneCheckoutError.style.display = "block";
@@ -99,7 +99,7 @@ function submitCheckout() {
     if (validateInputLength(firstName.value, 1) &&
     validateInputLength(lastName.value, 1) && 
     validateInputLength(emailCheckout.value, emailValidation(emailCheckout.value)) &&
-    validateInputLength(phoneCheckout.value, phoneValidation(phoneNumber.value)) &&
+    validateInputLength(phoneCheckout.value, checkoutPhoneValidation(phoneCheckout.value)) &&
     validateInputLength(address.value, 1) &&
     validateInputLength(zipCode.value, 1) &&
     validateInputLength(cardNumber.value, 1) &&
