@@ -125,38 +125,50 @@ nav ul a:hover {
   background-color: var(--light-btn-color);
 }
 
+
+/* ADD BUTTONS */
 .add-buttons {
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
 
+.add-buttons i {
+  color: var(--btn-text-color);
+  font-size: 1.5rem;
+}
+
 .add-cart {
   background-color: green;
 }
-
-/* .add-cart:hover span {
-  display: none;
+.favourite {
+  background-color: #113340;
 }
 
-.add-cart:hover:before{
-  content: '+';
-} */
+.add-cart:hover,
+.favourite:hover {
+  background-color: #768b90;
+}
 
 .add-cart,
 .favourite {
-  font-weight: 600;
-  font-size: 0.8rem;
+  padding: 15px 5px;
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+  border-radius: 6px;
+  margin: 5px auto;
+}
+
+
+.added-product {
+  background-color: #768b90;
   padding: 5px 5px;
   width: 50%;
   text-align: center;
   justify-self: center;
 }
 
-
-/* .btn:focus {
-  background-color: var(--secondary-bg-color);
-} */
 
 /* Back Button */
 .back-button_container {
