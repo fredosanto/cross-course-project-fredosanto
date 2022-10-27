@@ -20,14 +20,8 @@
     padding: 30px;
 }
 
-.jacket-list_container i {
-    font-size: 1.5rem;
-}
 
-.jacket-list_content i, p{
-    margin: 2px;
-    padding: 0 2px 2px 2px ;
-}
+
 
 .color-1 {color: var(--jacket-color-blk);}
 .color-2 {color: var(--jacket-color-red);}
