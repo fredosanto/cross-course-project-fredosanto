@@ -9,7 +9,7 @@ async function getJackets() {
     try {
         const response = await fetch(url);
         const getData = await response.json();
-
+        
         createHTML(getData)
     }
 
@@ -22,7 +22,7 @@ getJackets();
 
 function createHTML(jackets) {
     jackets.forEach(function(jacket) {
-        console.log(jacket);
+        // console.log(jacket);
 
         let cssClass = "fas";
 
