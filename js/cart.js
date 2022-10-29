@@ -17,7 +17,7 @@ cartItems.forEach((item) => {
                                         </div>
                                         <div class="top-sellers_content">
                                             <p>${item.name}</p>
-                                            <p>${item.price}</p>
+                                            <p>${item.price} NOK</p>
                                         </div>
                                     </a>
                                 </div>`;

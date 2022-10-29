@@ -33,7 +33,7 @@ function createHTML(jackets) {
             if(jackets[i].categories[0].id !== 27) {
                 continue;
             }
-            console.log(jackets[i])
+            // console.log(jackets[i])
 
 
             let cssClass = "fas";
@@ -70,40 +70,35 @@ function createHTML(jackets) {
             button.addEventListener("click", handleClick);
         });
 
-        handleClick()
-}
-
-//ADD THIS TO THE <div class="add-buttons"
-// <i class="${cssClass} fa-cart-shopping add-cart" data-name="${jackets[i].name}" data-price="${jackets[i].prices.price}"></i>
-
-    function handleClick() {
-        // console.log(event);
-        this.classList.toggle("far");
-        this.classList.toggle("fas");
+        function handleClick() {
+            // console.log(event);
+            this.classList.toggle("far");
+            this.classList.toggle("fas");
+            
+            const jacketName = this.dataset.name;
+            const jacketPrice = this.dataset.price;
+            // console.log("name", jacketName);
         
-        const jacketName = this.dataset.name;
-        const jacketPrice = this.dataset.price;
-        // console.log("name", jacketName);
-
-        const currentCart = getInCart();
-        // console.log(currentCart);
-
-
-        const itemInCart = currentCart.find(function(added) {
-            return added.name === jacketName;
-        });
+            const currentCart = getInCart();
+            // console.log(currentCart);
         
-        if (itemInCart === undefined) {
-            const item = { name: jacketName, price: jacketPrice };
-            currentCart.push(item);
-            saveItem(currentCart);
-        } else {
-            const newCart = currentCart.filter(added => added.name !== jacketName);
-            saveItem(newCart);
+        
+            const itemInCart = currentCart.find(function(added) {
+                return added.name === jacketName;
+            });
+            
+            if (itemInCart === undefined) {
+                const item = { name: jacketName, price: jacketPrice };
+                currentCart.push(item);
+                saveItem(currentCart);
+            } else {
+                const newCart = currentCart.filter(added => added.name !== jacketName);
+                saveItem(newCart);
+            }
+        };
+        
+        
+        function saveItem(cart) {
+            localStorage.setItem("cartItems", JSON.stringify(cart));
         }
-    };
-
-
-    function saveItem(cart) {
-        localStorage.setItem("cartItems", JSON.stringify(cart));
-    }
+}

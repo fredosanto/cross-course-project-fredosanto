@@ -1,5 +1,5 @@
 import { getInCart } from "./utils/addToCart.js";
-import jackets from "./news.js";
+
 
 const bestProductContainer = document.querySelector(".best-products_container");
 
