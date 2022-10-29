@@ -84,8 +84,13 @@ h2 {
   }
 
   .best-product p {
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
+  }
+
+  .best-product p:nth-child(2) {
+    font-weight: 600;
+    font-size: .9rem;
   }
 
 /* NEWSLETTER */
