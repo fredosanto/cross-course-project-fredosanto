@@ -1,6 +1,6 @@
 import { getInCart } from "./utils/addToCart.js";
 
-const url = "https://fredo.one/rainy_days/wp-json/wc/store/products";
+const url = "https://fredo.one/rainy_days/wp-json/wc/store/products/";
 const jacketContainer = document.querySelector(".jacket-list_container");
 
 
@@ -52,7 +52,7 @@ function createHTML(jackets) {
 
             jacketContainer.innerHTML += 
                 `<div class="jacket-list_item">
-                    <a href="/jacket.html">
+                    <a href="/details.html?id=${jackets[i].id}">
                         <img src="${jackets[i].images[0].src}" alt="" />
                     </a>
                     <div class="jacket-list_content"

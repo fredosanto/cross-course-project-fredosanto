@@ -27,13 +27,9 @@ h2 {
     text-align: center;
 }
 
-.jacket-image_small {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 1000px;
-    margin: 0px auto;
-    gap: 10px;
-    text-align: center;
+.jacket-image {
+    width: 90%;
+    margin: 50px;
 }
 
 .order-style {
@@ -101,4 +97,16 @@ fieldset {
     position: relative;
     list-style-type: '- ';
     font-weight: 600;
+}
+
+.details_btn {
+    width: auto;
+    background-color: #008c00;
+    border: 2px solid #000000;
+}
+
+.error-message {
+    width: auto;
+    text-align: center;
+    background-color: #F0E7CD;
 }
