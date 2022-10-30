@@ -58,47 +58,7 @@ function createHTML(jackets) {
                     <div class="jacket-list_content"
                         <h3>${jackets[i].name}</h3>
                         <p>${jackets[i].prices.price} NOK</p>
-                        <div class="add-buttons">
-                        <i class="${cssClass} fa-cart-shopping add-cart" data-name="${jackets[i].name}" data-price="${jackets[i].prices.price}"></i>
-                        </div>
                     </div>
                 </div>`;
-        }
-        const addCartButtons = document.querySelectorAll(".add-buttons i");
-        
-        addCartButtons.forEach((button) => {
-            button.addEventListener("click", handleClick);
-        });
-
-        function handleClick() {
-            // console.log(event);
-            this.classList.toggle("far");
-            this.classList.toggle("fas");
-            
-            const jacketName = this.dataset.name;
-            const jacketPrice = this.dataset.price;
-            // console.log("name", jacketName);
-        
-            const currentCart = getInCart();
-            // console.log(currentCart);
-        
-        
-            const itemInCart = currentCart.find(function(added) {
-                return added.name === jacketName;
-            });
-            
-            if (itemInCart === undefined) {
-                const item = { name: jacketName, price: jacketPrice };
-                currentCart.push(item);
-                saveItem(currentCart);
-            } else {
-                const newCart = currentCart.filter(added => added.name !== jacketName);
-                saveItem(newCart);
-            }
-        };
-        
-        
-        function saveItem(cart) {
-            localStorage.setItem("cartItems", JSON.stringify(cart));
         }
 }
