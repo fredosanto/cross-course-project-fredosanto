@@ -9,6 +9,7 @@ if (cartItems.length === 0) {
 }
 
 cartItems.forEach((item) => {
+    console.log(item)
     cartContainer.innerHTML += `<div class="product-container">
                                     <div class="top-sellers_products">
                                     <a href="/jacket.html">

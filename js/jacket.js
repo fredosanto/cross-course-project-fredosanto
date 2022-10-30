@@ -1,3 +1,6 @@
+import { getInCart } from "./utils/addToCart.js";
+// import { handleClick } from "./utils/addToCart";
+
 const jacketImage = document.querySelector(".main-image_container");
 const jacketHeader = document.querySelector(".order-header");
 const jacketContent = document.querySelector(".product-text_container");
@@ -9,6 +12,7 @@ const id = params.get("id");
 
 const url = "https://fredo.one/rainy_days/wp-json/wc/store/products/" + id;
 
+const cartItems = getInCart();
 
 async function jacketDetails () {
     try {
@@ -49,4 +53,39 @@ function addJacketHtml(jacket) {
                                
                                 
 
+                                const addCartButtons = document.querySelector(".details_btn");
+                                addCartButtons.addEventListener("click", handleClick);
+                                
+                                function handleClick() {
+                                    
+                                    const jacketName = jacket.name;
+                                    const jacketPrice = jacket.prices.price;
+                                    console.log("name", jacketName);
+                                    console.log("price", jacketPrice);
+                                
+                                    const currentCart = getInCart();
+                                    console.log(currentCart);
+                                
+                                
+                                    const itemInCart = currentCart.find(function(added) {
+                                        return added.name === jacketName;
+                                    });
+                                    
+                                    if (itemInCart === undefined) {
+                                        const item = { name: jacketName, price: jacketPrice };
+                                        currentCart.push(item);
+                                        saveItem(currentCart);
+                                    } else {
+                                        const newCart = currentCart.filter(added => added.name !== jacketName);
+                                        saveItem(newCart);
+                                    }
+                                };
+                                
+                                
+                                function saveItem(cart) {
+                                    localStorage.setItem("cartItems", JSON.stringify(cart));
+                                }
 }
+
+
+
