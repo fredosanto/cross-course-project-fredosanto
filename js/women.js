@@ -36,8 +36,6 @@ function createHTML(jackets) {
             // console.log(jackets[i])
 
 
-            let cssClass = "fas";
-
             const isJacketIncluded = cartItems.find(function(added) {
             // console.log(added)
 

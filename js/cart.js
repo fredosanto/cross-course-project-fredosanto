@@ -24,4 +24,5 @@ cartItems.forEach((item) => {
                                         </div>
                                     </a>
                                 </div>`;
+
 });
