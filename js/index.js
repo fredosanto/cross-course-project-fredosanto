@@ -1,4 +1,5 @@
-const url = "https://fredo.one/rainy_days/wp-json/wc/store/products/?featured=true";
+// const url = "https://fredo.one/rainy_days/wp-json/wc/store/products/?featured=true";
+const url = "https://rainydays.local/wp-json/wc/store/products/?featured=true";
 const bestProductContainer = document.querySelector(".best-products_container");
 
 async function getFeaturedJackets() {
