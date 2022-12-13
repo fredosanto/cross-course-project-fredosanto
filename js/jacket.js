@@ -10,7 +10,8 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const url = "https://fredo.one/rainy_days/wp-json/wc/store/products/" + id;
+// const url = "https://fredo.one/rainy_days/wp-json/wc/store/products/" + id;
+const url = "https://rainydays.local/wp-json/wc/store/products/" + id;
 
 const cartItems = getInCart();
 

@@ -1,6 +1,7 @@
 import { getInCart } from "./utils/addToCart.js";
 
-const url = "https://fredo.one/rainy_days/wp-json/wc/store/products/";
+// const url = "https://fredo.one/rainy_days/wp-json/wc/store/products/";
+const url = "https://rainydays.local/wp-json/wc/store/products/";
 const jacketContainer = document.querySelector(".jacket-list_container");
 
 
@@ -30,7 +31,7 @@ getJackets();
 function createHTML(jackets) {
     for(let i = 0; i < jackets.length; i++) {
             
-            if(jackets[i].categories[0].id === 27) {
+            if(jackets[i].categories[0].id === 31) {
                 continue;
             }
             // console.log(jackets[i])
