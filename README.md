@@ -1,4 +1,4 @@
-# Rany Days
+# Rainy Days
 
 https://user-images.githubusercontent.com/93183340/206743130-b69660d0-4662-49fe-8a91-d275f2814766.mov
 
