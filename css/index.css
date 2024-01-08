@@ -1,0 +1,124 @@
+h2 {
+  text-align: center;
+}
+
+.hero-header {
+    background-image: url(/images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    background-position-x: 2%;
+    background-position-y: top;
+    position: relative;
+  }
+  
+  .hero-header_content {
+    position: absolute;
+    text-align: center;
+    max-width: 500px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-header_content p {
+    margin: 10px 0;
+    font-weight: 400;
+  }
+
+  .hero-button {
+    background-color: var(--light-btn-color);
+    color: var(--text-color);
+  }
+
+  .hero-button:hover {
+    background-color: var(--dark-btn-color);
+    color: var(--btn-text-colo);
+  }
+
+  .hero-text_background {
+    background: rgb(17, 51, 64, 0.8);
+    padding: 10px;
+    color: white;
+  }
+  
+  .shop-gender_container {
+    background-color: var(--secondary-bg-color);
+  }
+  
+  .shop-gender {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 50px auto;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .shop-gender img {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+  }
+  
+  .shop-image_container {
+    margin: 25px 0px;
+  }
+  
+  .shop-image_container h2 {
+    font-weight: 600;
+  }
+  
+  
+
+/* TOP SELLERS SECTION */
+  .best-products_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 50px auto;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .best-product p {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .best-product p:nth-child(2) {
+    font-weight: 600;
+    font-size: .9rem;
+  }
+
+/* NEWSLETTER */
+  .newsletter {
+    background-color: var(--secondary-bg-color);
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px auto;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .newsletter h2 {
+    font-weight: 900;
+  }
+  
+  .newsletter_content {
+    margin: auto;
+  }
+  
+  
+  .newsletter img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .newsletter .btn {
+    border-style: none;
+  }

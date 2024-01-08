@@ -1,0 +1,31 @@
+:root {
+    --jacket-color-blk: #000000;
+    --jacket-color-red: #E51515;
+    --jacket-color-green: #107647;
+    --jacket-color-blue: #2E1571;
+    --jacket-color-cream: #F0E7CD;
+
+}
+
+.products-heading {
+    text-align: center;
+    font-weight: 600;
+}
+
+.jacket-list_container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1;
+    gap: 50px;
+    padding: 30px;
+}
+
+
+
+
+.color-1 {color: var(--jacket-color-blk);}
+.color-2 {color: var(--jacket-color-red);}
+.color-3 {color: var(--jacket-color-green);}
+.color-4 {color: var(--jacket-color-blue);}
+.color-5 {color: var(--jacket-color-cream);}
+

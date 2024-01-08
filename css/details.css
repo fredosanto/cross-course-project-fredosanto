@@ -1,0 +1,112 @@
+:root {
+    --jacket-color-blk: #000000;
+    --jacket-color-red: #E51515;
+    --jacket-color-green: #107647;
+    --jacket-color-blue: #2E1571;
+    --jacket-color-cream: #F0E7CD;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Product Section */
+
+.product-section_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 10px auto;
+    gap: 10px;
+    text-align: center;
+}
+
+.jacket-image {
+    width: 90%;
+    margin: 50px;
+}
+
+.order-style {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 0px auto;
+    gap: 10px;
+    text-align: center;
+}
+
+.order-header {
+    margin: 25px auto;
+}
+
+form {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid #000000;
+    margin: 10px;
+}
+
+fieldset {
+    background-color: var(--primary-bg-color);
+    padding-bottom: 15px;
+    border: 1px solid #000000;
+}
+
+.color-choice-1 {color: var(--jacket-color-blk);}
+.color-choice-2 {color: var(--jacket-color-red);}
+.color-choice-3 {color: var(--jacket-color-green);}
+.color-choice-4 {color: var(--jacket-color-blue);}
+.color-choice-5 {color: var(--jacket-color-cream);}
+
+.sizes, .colours, .add-to-cart_btn {
+    margin: 10px;
+}
+
+.sizes label,
+.colours label {
+    margin: 0px 5px;
+    font-weight: 600;
+}
+
+.sizes input:checked + label {
+    text-decoration: 3px underline;
+}
+
+.sizes input,
+.colours input {
+    display: none;
+}
+
+.colours input:checked + label i {
+    border: 2px solid #000000;
+}
+
+.product-text_container {
+    text-align: left;
+    margin: 10px auto;
+}
+
+.product-text_list{
+    list-style-position: inside;
+    left: 10px;
+    position: relative;
+    list-style-type: '- ';
+    font-weight: 600;
+}
+
+.details_btn {
+    width: auto;
+    background-color: #008c00;
+    border: 2px solid #000000;
+}
+
+.error-message {
+    width: auto;
+    text-align: center;
+    background-color: #F0E7CD;
+}

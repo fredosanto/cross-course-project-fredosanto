@@ -1,0 +1,134 @@
+/* Media */
+@media (min-width: 750px) {
+
+  .shop-gender {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .shop-image_container h2 {
+    position: absolute;
+    color: #ffffff;
+  }
+
+  .top-sellers {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .best-products_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .newsletter {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .newsletter_content {
+    text-align: center;
+    max-width: 60%;
+  }
+
+  .social-media i {
+    display: inline-block;
+    color: var(--text-footer-color);
+  }
+
+  .footer-container {
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-content {
+    max-width: 200px;
+  }
+
+  .footer-content a {
+    color: var(--text-footer-color);
+    font-size: 1rem;
+    text-align: left;
+    text-transform: none;
+  }
+
+  .footer-logo {
+    margin: auto;
+  }
+
+  .jacket-list_container {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .product-section_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+  }
+
+  .jacket-image_small {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact_container,
+  .about_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact_content,
+  .about_content {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+@media (min-width: 860px) {
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  header label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px;
+  }
+
+  header :nth-child(3) {
+    order: 2;
+  }
+  header :nth-child(4) {
+    order: 1;
+  }
+  header :nth-child(5) {
+    order: 3;
+  }
+
+  .jacket-image_small {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .checkout_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+}
+
+@media (min-width: 1200px) {
+  .product-section_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+  }
+}

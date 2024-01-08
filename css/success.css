@@ -1,0 +1,16 @@
+.logo-main,
+.footer-logo {
+    margin: auto;
+}
+
+section {
+    height: 80vh;
+}
+
+.checkout-success {
+    background-color: var(--secondary-bg-color);
+    max-width: 500px;
+    text-align: center;
+    margin: 25px auto;
+    margin-top: 120px;
+}

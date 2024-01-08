@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="For any inquiries contact us on the contact form"
+    />
+    <title>Rainy Days | Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script
+      src="https://kit.fontawesome.com/c9a6228c0a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="spacing-navbar"></div>
+    <header>
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" name="hamburger-menu" id="hamburger-menu" />
+      <nav class="nav-elements">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/products.html">Men</a></li>
+          <li><a href="/products-women.html">Women</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="logo logo-main">
+        <a href="/index.html">
+          <img
+            class="logo_image"
+            src="/images/rainy-days_logo_dark.png"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <div>
+        <i class="fas fa-heart"></i>
+        <a href="/checkout.html">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </div>
+    </header>
+    <div class="info-bar"></div>
+    <main>
+      <div class="back-button_container">
+        <a onclick="history.back()" href="#">
+          <div class="back-button_icon">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <span class="back-button_text">Back</span>
+        </a>
+      </div>
+      <h1>Contact Us</h1>
+      <section class="contact_container">
+        <div class="contact_content">
+          <h2>Contact form</h2>
+          <p>
+            Please fill out this form in order to contact us. We will reply on
+            all inquiries within 2-4 days.
+          </p>
+          <div class="contact_form">
+            <form id="contact_form" action="">
+              <div class="form-success">
+                <strong>Success!</strong> We have recieved your submission, and
+                will get to you soon!
+              </div>
+              <div class="form-error">
+                <strong>Woops!</strong> Something went wrong, please try again.
+              </div>
+              <div class="form-items">
+                <label for="name"><strong>Name</strong> (required):</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="John Harrison"
+                />
+                <div class="error-message name-error">
+                  * Not valid, please enter your name.
+                </div>
+              </div>
+              <div class="form-items">
+                <label for="email"><strong>Email</strong> (required):</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="your.email@email.com"
+                />
+                <div class="error-message email-error">
+                  * Not an valid email, please enter your email.
+                </div>
+              </div>
+              <div class="form-items">
+                <label for="phone"
+                  ><strong>Phone number</strong> (required):</label
+                >
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="999-99-999"
+                />
+                <div class="error-message phone-error">
+                  * Not a valid number, please try this format: 000-00-000.
+                </div>
+              </div>
+              <div class="form-items">
+                <label for="comment"
+                  ><strong>Comment</strong> (50 to 250 characters):</label
+                >
+                <textarea
+                  name="comment"
+                  id="comment"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write your text here..."
+                ></textarea>
+                <div class="error-message comment-error">
+                  * Empty field or too few/many characters in your inquiry.
+                </div>
+              </div>
+              <input type="submit" value="Send" class="btn submit" />
+            </form>
+          </div>
+        </div>
+        <div class="contact_image">
+          <img
+            src="/images/hiking-group_contact.jpg"
+            alt="picture of a hiking group in the mountains"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <a href="/about.html">About Us</a>
+          <a href="/contact.html">Contact Us</a>
+          <a href="#">Stores</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Privacy</a>
+        </div>
+        <div class="logo footer-logo">
+          <img src="/images/rainy-days_logo_white.png" alt="logo" />
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <div class="copyright">Copyright &copy;</div>
+      </div>
+    </footer>
+    <script type="module" src="/js/contact.js"></script>
+  </body>
+</html>
